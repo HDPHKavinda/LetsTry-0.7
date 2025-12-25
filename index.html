@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Restaurant Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>AR Restaurant Menu</h1>
+    </header>
+    
+    <main>
+        <div class="food-card">
+            <div class="food-image">
+                <img src="assest\pizza\thumbnail.webp" alt="Margherita Pizza">
+            </div>
+            <div class="food-details">
+                <h2>Margherita Pizza</h2>
+                <p class="description">Classic Italian pizza with fresh mozzarella, basil, and tomato sauce.</p>
+                <p class="price">LKR 2400</p>
+                <button id="view-in-ar" class="cta-button">View in AR</button>
+            </div>
+        </div>
+        
+        <div id="ar-container" class="ar-container hidden">
+            <!-- AR experience will be loaded here -->
+            <div id="ar-label" class="ar-label">
+                <h3>Margherita Pizza</h3>
+                <p>LKR 2400</p>
+            </div>
+        </div>
+        
+        <div id="fallback-container" class="fallback-container hidden">
+            <!-- Fallback 3D viewer will be loaded here -->
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Luxury Hotel Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- Three.js for 3D rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    
+    <!-- GLTFLoader for loading 3D models -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <!-- OrbitControls for the fallback viewer -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/webxr-ar.js"></script>
+    <script src="js/ar-quick-look.js"></script>
+    <script src="js/fallback-viewer.js"></script>
+</body>
+</html>

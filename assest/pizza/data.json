@@ -1,0 +1,9 @@
+{
+  "name": "Margherita Pizza",
+  "description": "Classic Italian pizza with fresh mozzarella, basil, and tomato sauce.",
+  "price": "LKR 2400",
+  "size": "12 inch",
+  "model": "assets/pizza/pizza.glb",
+  "fallback": "assets/pizza/pizza.webp",
+  "thumbnail": "assets/pizza/thumbnail.webp"
+}
